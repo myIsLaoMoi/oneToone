@@ -1,0 +1,22 @@
+[Unit]
+Description=文件快传服务
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/fwq/transfer/server
+Environment=DATA_DIR=/root/fwq/transfer/data
+Environment=WEB_DIR=/root/fwq/transfer/web/dist
+Environment=MAX_FILE_SIZE=2147483648
+Environment=QUOTA_BYTES=10737418240
+Environment=RETENTION_HOURS=24
+ExecStart=/root/fwq/transfer/server/.venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8791 --proxy-headers
+Restart=always
+RestartSec=3
+MemoryMax=256M
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

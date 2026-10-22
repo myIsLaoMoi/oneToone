@@ -1,0 +1,17 @@
+{
+  "name": "one-to-one-mobile",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "sync": "cap sync android",
+    "open": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.2",
+    "@capacitor/core": "^6.2.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.2.2"
+  }
+}

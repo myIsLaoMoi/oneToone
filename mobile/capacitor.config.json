@@ -1,0 +1,12 @@
+{
+  "appId": "icu.pokeking.transfer",
+  "appName": "文件快传",
+  "webDir": "../web/dist",
+  "server": {
+    "androidScheme": "http",
+    "hostname": "localhost"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+data/
+.aicode/
+.tmp/
+mobile/android/.gradle/
+mobile/android/build/
+mobile/android/app/build/
+mobile/android/local.properties
+mobile/android/app/src/main/assets/public/
+*.apk
+.pytest_cache/
